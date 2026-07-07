@@ -13,7 +13,7 @@ body {
 }
 
 /*-------------This is the Stats-----------*/
-.Stats {
+.stats {
     color: #ffff;
 }
 
@@ -22,10 +22,31 @@ body {
 }
 
 /*-------------This is the Education----------------*/
-.Education {
+.education {
     color: #ffff;
 }
 
 .myEduc {
+    color: #ffff;
+}
+
+/*----------------This is the Skills------------------*/
+.skills {
+    color: #ffff;
+}
+.mySkills {
+    color: #ffff;
+}
+
+/*--------------------This is the About Me--------------------*/
+.aboutMe {
+    color: #ffff;
+}
+
+.myAboutme {
+    color: #ffff;
+}
+
+.contact {
     color: #ffff;
 }
