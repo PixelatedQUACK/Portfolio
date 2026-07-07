@@ -1,4 +1,5 @@
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #120b21;
 }
 
@@ -12,6 +13,34 @@ body {
     text-decoration: none;
 }
 
+#mainStats {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+}
+
+/*-----------This is resposible for their positioning, mother--------------*/
+.allStats {
+    position: absolute;
+    top: 200%;
+}
+
+.allEducation {
+    position: absolute;
+    top: 300%;
+}
+
+.allSkills {
+    position: absolute;
+    top: 400%;
+}
+
+.allAboutMe {
+    position: absolute;
+    top: 500%;
+}
+
+
 /*-------------This is the Stats-----------*/
 .stats {
     color: #ffff;
@@ -22,6 +51,13 @@ body {
 }
 
 /*-------------This is the Education----------------*/
+
+#mainEducation {
+    position: absolute;
+    top: 65%;
+    left: 55%;
+}
+
 .education {
     color: #ffff;
 }
@@ -31,6 +67,12 @@ body {
 }
 
 /*----------------This is the Skills------------------*/
+#mainSkills {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
 .skills {
     color: #ffff;
 }
@@ -39,6 +81,12 @@ body {
 }
 
 /*--------------------This is the About Me--------------------*/
+#mainAboutMe {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+
 .aboutMe {
     color: #ffff;
 }
