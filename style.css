@@ -66,6 +66,10 @@ body {
     color: #ffff;
 }
 
+.myEducTable {
+    color: #ffff;
+}
+
 /*----------------This is the Skills------------------*/
 #mainSkills {
     position: absolute;
@@ -77,6 +81,18 @@ body {
     color: #ffff;
 }
 .mySkills {
+    color: #ffff;
+}
+
+.progEssentials {
+    color: #ffff;
+}
+
+.linuxExp {
+    color: #ffff;
+}
+
+.linuxDis {
     color: #ffff;
 }
 
