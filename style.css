@@ -1,6 +1,28 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #120b21;
+    background-image: url(./assets/Main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mainClass {
+    background-image: url(./assets/Main.png);
+}
+
+#mainId {
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 #mainName {
@@ -13,35 +35,63 @@ body {
     text-decoration: none;
 }
 
+
+/*-----------This is resposible for their positioning, mother--------------*/
 #mainStats {
     position: absolute;
     top: 65%;
     left: 45%;
 }
 
-/*-----------This is resposible for their positioning, mother--------------*/
 .allStats {
-    position: absolute;
-    top: 200%;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .allEducation {
-    position: absolute;
-    top: 300%;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .allSkills {
-    position: absolute;
-    top: 400%;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .allAboutMe {
-    position: absolute;
-    top: 500%;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
 /*-------------This is the Stats-----------*/
+#idAllStats {
+    background-image: url(./assets/MainBranch1.png);
+}
+
 .stats {
     color: #ffff;
 }
@@ -70,6 +120,10 @@ body {
     color: #ffff;
 }
 
+#idAllEducation {
+    background-image: url(./assets/MainBranch2.png);
+}
+
 /*----------------This is the Skills------------------*/
 #mainSkills {
     position: absolute;
@@ -96,6 +150,9 @@ body {
     color: #ffff;
 }
 
+#idAllSkills {
+    background-image: url(./assets/MainBranch3.png);
+}
 /*--------------------This is the About Me--------------------*/
 #mainAboutMe {
     position: absolute;
@@ -113,4 +170,8 @@ body {
 
 .contact {
     color: #ffff;
+}
+
+#idAllAboutMe {
+    background-image: url(./assets/MainBranch4.png);
 }
