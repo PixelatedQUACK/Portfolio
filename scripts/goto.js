@@ -27,28 +27,30 @@ document.querySelectorAll('.Seeds a').forEach(link => {
                 overlay.style.opacity = '1';
             }, 10);
             
-            // Wait for fade to finish, then snap to section and fade in
+            // Wait for fade to finish (500ms) before going to destination
             setTimeout(() => {
-                // Temporarily disable smooth scrolling on html to ensure instant snap
-                const html = document.documentElement;
-                const originalScrollBehavior = html.style.scrollBehavior;
-                html.style.scrollBehavior = 'auto';
+                // Disable smooth scrolling temporarily to force instant jump
+                document.documentElement.style.scrollBehavior = 'auto';
 
+                // Jump to the section while screen is black
                 targetSection.scrollIntoView({
-                    behavior: 'auto', // CSS scrollBehavior is 'auto', making this instant
+                    behavior: 'auto',
                     block: 'start'
                 });
                 
-                // Fade back from black
-                overlay.style.opacity = '0';
-                
-                // Restore original scroll behavior
-                html.style.scrollBehavior = originalScrollBehavior;
-
-                // Remove the overlay after it fades out
+                // Let the browser process the instant scroll before fading back
                 setTimeout(() => {
-                    overlay.remove();
-                }, 500);
+                    // Restore original scroll behavior
+                    document.documentElement.style.scrollBehavior = '';
+                    
+                    // Then fade back from black
+                    overlay.style.opacity = '0';
+                    
+                    // Remove the overlay after it fades out
+                    setTimeout(() => {
+                        overlay.remove();
+                    }, 500);
+                }, 50);
             }, 510); // Wait 500ms for transition + 10ms delay
         }
     });

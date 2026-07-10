@@ -21,20 +21,29 @@ html {
 }
 
 .mainClass {
-    background-image: url(./assets/Main.png);
     min-height: 100vh;
 }
+
+
 
 #mainId {
     position: relative;
     min-height: 100vh;
     box-sizing: border-box;
     width: 100%;
-    background-image: url(./assets/Main.png)
+    background-image: url(./assets/Main.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #mainName {
     color: #fff;
+    font-size: 4rem;
+    position: absolute;
+    top: -5%;
+    left: 2%;
 }
 
 .Seeds a {
@@ -44,11 +53,7 @@ html {
 
 
 /*-----------This is resposible for their positioning, mother--------------*/
-#mainStats {
-    position: absolute;
-    top: 65%;
-    left: 45%;
-}
+
 
 .allStats {
     position: relative;
@@ -95,8 +100,14 @@ html {
 
 
 /*-------------This is the Stats-----------*/
+#mainStats {
+    position: absolute;
+    top: 23%;
+    left: 40%;
+}
+
 #idAllStats {
-    background-image: url(./assets/MainBranch1.png);
+    background-image: url(./assets/MainBranch3.png);
 }
 
 .stats {
@@ -111,8 +122,8 @@ html {
 
 #mainEducation {
     position: absolute;
-    top: 65%;
-    left: 55%;
+    top: 21%;
+    left: 53%;
 }
 
 .education {
@@ -134,8 +145,8 @@ html {
 /*----------------This is the Skills------------------*/
 #mainSkills {
     position: absolute;
-    top: 80%;
-    left: 45%;
+    top: 48%;
+    left: 32%;
 }
 
 .skills {
@@ -158,13 +169,13 @@ html {
 }
 
 #idAllSkills {
-    background-image: url(./assets/MainBranch3.png);
+    background-image: url(./assets/MainBranch4.png);
 }
 /*--------------------This is the About Me--------------------*/
 #mainAboutMe {
     position: absolute;
-    top: 80%;
-    left: 55%;
+    top: 42%;
+    left: 58%;
 }
 
 .aboutMe {
@@ -180,7 +191,7 @@ html {
 }
 
 #idAllAboutMe {
-    background-image: url(./assets/MainBranch4.png);
+    background-image: url(./assets/MainBranch1.png);
 }
 
 #mainName h1,
