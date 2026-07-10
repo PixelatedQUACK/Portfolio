@@ -6,7 +6,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 /*--------------animations---------------------*/
@@ -17,13 +17,12 @@ body {
 
 html {
     scroll-behavior: smooth;
+    background-color: #120b21;
 }
 
 .mainClass {
     background-image: url(./assets/Main.png);
     min-height: 100vh;
-    position: relative;
-
 }
 
 #mainId {
@@ -31,15 +30,15 @@ html {
     min-height: 100vh;
     box-sizing: border-box;
     width: 100%;
+    background-image: url(./assets/Main.png)
 }
 
 #mainName {
-    font-size: 1.2rem;
-    color: #ffff;
+    color: #fff;
 }
 
 .Seeds a {
-    color: #ffff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -101,11 +100,11 @@ html {
 }
 
 .stats {
-    color: #ffff;
+    color: #fff;
 }
 
 .myStats p {
-    color: #ffff;
+    color: #fff;
 }
 
 /*-------------This is the Education----------------*/
@@ -117,15 +116,15 @@ html {
 }
 
 .education {
-    color: #ffff;
+    color: #fff;
 }
 
 .myEduc {
-    color: #ffff;
+    color: #fff;
 }
 
 .myEducTable {
-    color: #ffff;
+    color: #fff;
 }
 
 #idAllEducation {
@@ -140,22 +139,22 @@ html {
 }
 
 .skills {
-    color: #ffff;
+    color: #fff;
 }
 .mySkills {
-    color: #ffff;
+    color: #fff;
 }
 
 .progEssentials {
-    color: #ffff;
+    color: #fff;
 }
 
 .linuxExp {
-    color: #ffff;
+    color: #fff;
 }
 
 .linuxDis {
-    color: #ffff;
+    color: #fff;
 }
 
 #idAllSkills {
@@ -169,21 +168,22 @@ html {
 }
 
 .aboutMe {
-    color: #ffff;
+    color: #fff;
 }
 
 .myAboutme {
-    color: #ffff;
+    color: #fff;
 }
 
 .contact {
-    color: #ffff;
+    color: #fff;
 }
 
 #idAllAboutMe {
     background-image: url(./assets/MainBranch4.png);
 }
 
+#mainName h1,
 .stats h1,
 .education h1,
 .skills h1,
