@@ -1,7 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #120b21;
-    background-image: url(./assets/Main.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -10,12 +9,21 @@ body {
 
 }
 
+/*--------------animations---------------------*/
+.fade-out-screen {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 .mainClass {
     background-image: url(./assets/Main.png);
+    min-height: 100vh;
+    position: relative;
+
 }
 
 #mainId {
@@ -174,4 +182,17 @@ html {
 
 #idAllAboutMe {
     background-image: url(./assets/MainBranch4.png);
+}
+
+.stats h1,
+.education h1,
+.skills h1,
+.aboutMe h1 {
+    margin: 0;
+    padding-top: 40px;
+}
+
+body, h1 {
+    margin: 0;
+    padding: 0;
 }
